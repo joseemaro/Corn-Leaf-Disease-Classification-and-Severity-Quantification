@@ -112,12 +112,10 @@ wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
 ## 📦 Project Structure
 
 ```
-├── 1-Preprocesamiento-v3.ipynb      # Data preprocessing pipeline
-├── 2-Modelado-v6.ipynb              # Model training and evaluation
-├── 4-segmentacion-v6.ipynb          # Base segmentation module
-├── 4-segmentacion-v7-heal.ipynb     # Healthy leaf segmentation
-├── 4-segmentacion-v8-rust.ipynb     # Rust-specific segmentation
-├── 5-clasif-loop-v7.ipynb           # Classification pipeline
+├── 1-Preprocesamiento.ipynb      # Data preprocessing pipeline
+├── 2-Modelado.ipynb              # Model training and evaluation
+├── 4-segmentacion.ipynb          # Base segmentation module
+├── 5-clasif-loop.ipynb           # Classification pipeline
 ├── 6-deteccion-area.ipynb           # Area quantification module
 ├── IEEE_Maiz_ResNet.pdf             # Research paper
 ├── requirements.txt                 # Python dependencies
@@ -131,7 +129,7 @@ wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
 Run the preprocessing notebook to apply multi-space enhancement:
 
 ```bash
-jupyter notebook 1-Preprocesamiento-v3.ipynb
+jupyter notebook 1-Preprocesamiento.ipynb
 ```
 
 This applies:
@@ -144,7 +142,7 @@ This applies:
 Train the ResNet50V2 classifier:
 
 ```bash
-jupyter notebook 2-Modelado-v6.ipynb
+jupyter notebook 2-Modelado.ipynb
 ```
 
 **Training Configuration:**
@@ -160,7 +158,7 @@ jupyter notebook 2-Modelado-v6.ipynb
 Process images through the SAM-based segmentation pipeline:
 
 ```bash
-jupyter notebook 4-segmentacion-v6.ipynb
+jupyter notebook 4-segmentacion.ipynb
 ```
 
 The segmentation module:
@@ -175,7 +173,7 @@ The segmentation module:
 Run the full classification and quantification pipeline:
 
 ```bash
-jupyter notebook 5-clasif-loop-v7.ipynb
+jupyter notebook 5-clasif-loop.ipynb
 ```
 
 ### 5. Severity Quantification
